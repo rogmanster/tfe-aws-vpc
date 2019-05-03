@@ -5,5 +5,5 @@ module "vpc" {
   version = "1.64.0"
 
   azs = "us-west-2b"
-  cidr = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/16"
 }
