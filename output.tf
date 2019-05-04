@@ -3,5 +3,5 @@ output "vpc_id" {
 }
 
 output "ami_id" {
-  value = "${data.aws_ami.rhel_ami.id}"
+  value = "${aws_ami.rhel_ami.id}"
 }
