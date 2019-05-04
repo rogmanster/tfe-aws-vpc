@@ -9,3 +9,13 @@ module "vpc" {
   public_subnets  = ["10.139.101.0/24", "10.139.102.0/24", "10.139.103.0/24"]
   cidr = "10.139.0.0/16"
 }
+  
+data "aws_ami" "rhel_ami" {
+  most_recent      = true
+  owners           = ["309956199498"]
+
+  filter {
+    name   = "name"
+    values = ["*RHEL-7.3_HVM_GA-*"]
+  }
+}
