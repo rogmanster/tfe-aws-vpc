@@ -10,8 +10,7 @@ module "vpc" {
   cidr = "10.139.0.0/16"
 }
   
-  
-  data "aws_ami" "rhel_ami" {
+data "aws_ami" "rhel_ami" {
   most_recent      = true
   owners           = ["309956199498"]
 
