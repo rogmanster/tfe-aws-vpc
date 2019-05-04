@@ -10,19 +10,4 @@ module "vpc" {
   cidr = "10.139.0.0/16"
 }
   
-data "aws_ami" "rhel_ami" {
-  most_recent      = true
-  owners           = ["309956199498"]
-
-  filter {
-    name   = "name"
-    values = ["*RHEL-7.3_HVM_GA-*"]
-  }
-}
-  
-data "null_data_source" "values" {
-  inputs = {
-    ami_id = "${data.aws_ami.rhel_ami.id}"
-  }
-}
   
