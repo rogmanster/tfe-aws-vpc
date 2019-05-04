@@ -3,5 +3,5 @@ output "vpc_id" {
 }
 
 output "ami_id" {
-  value = "${null_data_source.values.outputs}"
+  value = "${data.null_data_source.values.outputs}"
 }
