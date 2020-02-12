@@ -2,7 +2,7 @@
 // Modules
 module "vpc" {
   source  = "app.terraform.io/rogercorp/vpc/aws"
-  version = "1.64.0"
+  #version = "1.64.0"
 
   azs = ["us-east-1a", "us-east-1b", "us-east-1c"]
   #azs = ["us-west-2a", "us-west-2b", "us-west-2c"]
