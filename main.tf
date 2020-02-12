@@ -2,8 +2,9 @@
 // Modules
 module "vpc" {
   source  = "app.terraform.io/rogercorp/vpc/aws"
-  #version = "1.64.0"
-
+  version = "1.64.0"
+  
+  #~Note: change default aws region to change azs~#
   azs = ["us-east-2a", "us-east-2b", "us-east-2c"]
   #azs             = ["us-west-2a", "us-west-2b", "us-west-2c"]
   private_subnets = ["10.139.1.0/24", "10.139.2.0/24", "10.139.3.0/24"]
