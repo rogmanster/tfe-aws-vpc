@@ -1,5 +1,3 @@
-//--------------------------------------------------------------------
-// Modules
 module "vpc" {
   source  = "app.terraform.io/rogercorp/vpc/aws"
   version = "2.24.0"
