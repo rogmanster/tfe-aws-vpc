@@ -3,9 +3,15 @@ module "vpc" {
   version = "2.24.0"
   
   azs             = ["us-west-2a", "us-west-2b", "us-west-2c"]
-  private_subnets = ["10.140.1.0/24", "10.140.2.0/24", "10.140.3.0/24"]
-  public_subnets  = ["10.140.101.0/24", "10.140.102.0/24", "10.140.103.0/24"]
-  #cidr            = "10.140.0.0/16" #~toggle cidr block to invoke change for run triggers~#
-  cidr            = "10.0.0.0/8"
+  
+  #~toggle below blocks to invoke run trigger change~#
+  #private_subnets = ["10.140.1.0/24", "10.140.2.0/24", "10.140.3.0/24"]
+  #public_subnets  = ["10.140.101.0/24", "10.140.102.0/24", "10.140.103.0/24"]
+  #cidr            = "10.140.0.0/16" 
+  
+  #~toggle below blocks to invoke run trigger change~#
+  private_subnets = ["10.139.1.0/24", "10.139.2.0/24", "10.139.3.0/24"]
+  public_subnets  = ["10.139.101.0/24", "10.139.102.0/24", "10.139.103.0/24"]
+  cidr            = "10.139.0.0/8"
 }
   
