@@ -7,6 +7,6 @@ module "vpc" {
   #secondary_cidr_blocks = [ "10.139.0.0/16" ]
   private_subnets = var.private_subnets
   public_subnets  = var.public_subnets
-  cidr            = var.cidr_block
+  cidr            = var.cidr
 }
   
