@@ -3,7 +3,7 @@ data "aws_availability_zones" "available" {
 
 module "vpc" {
   source  = "app.terraform.io/rogercorp/vpc-PMR/aws"
-  version = "2.33.0"
+  version = "2.64.0"
 
 
   name            = var.name
